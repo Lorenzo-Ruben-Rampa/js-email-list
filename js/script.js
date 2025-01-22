@@ -1,3 +1,8 @@
+// Eventlistener click button INIZIO EVENTO CLICK
+const button = document.querySelector('button')
+button.addEventListener('click', function() {
+
+
 // Seleziono l'output
 const outputArray = document.getElementById('randomEmailList')
 // console.log(outputArray);
@@ -29,4 +34,6 @@ axios.get(endpoint)
     })
 }
 
+})
 
+// FINE EVENTO CLICK
