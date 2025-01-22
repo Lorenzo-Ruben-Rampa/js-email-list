@@ -12,7 +12,7 @@ axios.get(endpoint)
     .then(response => {
         for(let i=0; i < 10; i++) {
             let randomEmail = emailList[i];
-            const result = response.data;
+            const result = response.string;
             let email = result.response;
         }
         console.log(email);
