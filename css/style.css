@@ -20,6 +20,14 @@ p {
     display: inline;
 }
 
+button {
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 5%;
+    background-color: yellow;
+    padding: 10px;
+}
+
 #randomEmailList {
     display: flex;
     align-items: center;
