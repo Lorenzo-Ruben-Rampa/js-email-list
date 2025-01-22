@@ -12,11 +12,11 @@ axios.get(endpoint)
     .then(response => {
         for(let i=0; i <= 10; i++) {
             let randomEmail = emailList[i];
-            const newRandomEmail = emailList.push; 
+            const result = response.email; 
         }
     })
 
-console.log(randomEmail);
+console.log(response);
 
 // // Output in pagina
 // outputEl.innerText = email;
