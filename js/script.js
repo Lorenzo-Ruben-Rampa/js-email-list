@@ -20,7 +20,7 @@ axios.get(endpoint)
     // Template literal per l'output
     let emailHtml = "";
     emailArray.forEach(function (email, index) {
-      emailHtml += `<div>Email n°${index + 1}: ${email}</div>`;
+      emailHtml += `<div>Email n°${index + 1}: <p>${email}</p></div>`;
     });
 
     // // Output in pagina

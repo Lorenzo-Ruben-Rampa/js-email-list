@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box; 	
+    margin: 0px;
+    padding: 0px;
+    color: black
+}
+
+.container {
+    height: 100vh;
+    margin: 30px 50px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+p {
+    color: blue;
+    display: inline;
+}
+
+#randomEmailList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
