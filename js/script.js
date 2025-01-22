@@ -2,23 +2,20 @@
 const outputArray = document.getElementById('randomEmailList')
 console.log(outputArray);
 
-//Creo l'array dove metterò le email generate
-const emailList = [];
-
 const endpoint = 'https://flynn.boolean.careers/exercises/api/random/mail';
 
+
+for(let i=0; i < 10; i++) {
 //Richiesta Ajax per generare email
 axios.get(endpoint)
     .then(response => {
-        for(let i=0; i < 10; i++) {
-            let randomEmail = emailList[i];
-            const result = response.string;
-            let email = result.response;
-        }
-        console.log(email);
-    // // Output in pagina
-    outputEl.innerText = email;
-    })
+        const final = response.data.response
+        // console.log(response.data.response);
 
-// console.log(response);
+    // // Output in pagina
+    outputArray.innerText = final;
+    
+    })
+}
+
 
