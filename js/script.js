@@ -1,7 +1,14 @@
-// Eventlistener click button INIZIO EVENTO CLICK
+// Eventlistener click button 
 const button = document.querySelector('button')
-button.addEventListener('click', function() {
 
+// INIZIO EVENTO CLICK
+button.addEventListener('click', buttonFunction);
+
+// Richiamo la funzione dell'evento esternamente
+buttonFunction();
+
+//Funzione per far generare le mail prima del click
+function buttonFunction() {
 
 // Seleziono l'output
 const outputArray = document.getElementById('randomEmailList')
@@ -24,7 +31,7 @@ axios.get(endpoint)
 
     // Template literal per l'output
     let emailHtml = "";
-    emailArray.forEach(function (email, index) {
+    emailArray.forEach((email, index) => {
       emailHtml += `<div>Email n°${index + 1}: <p>${email}</p></div>`;
     });
 
@@ -34,6 +41,6 @@ axios.get(endpoint)
     })
 }
 
-})
+}
 
 // FINE EVENTO CLICK
